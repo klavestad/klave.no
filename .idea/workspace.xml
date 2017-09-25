@@ -1,70 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d8d7e96-582e-40ce-8bc5-8f96fa086c26" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CREDITS.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/imagelightbox.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/magnific-popup.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/slick.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/theme-color/bridge-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/theme-color/dark-blue-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/theme-color/dark-red-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/theme-color/default-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/theme-color/green-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/theme-color/lite-blue-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/theme-color/orange-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/theme-color/pink-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/theme-color/purple-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/theme-color/red-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/Simple-Line-Icons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/Simple-Line-Icons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/Simple-Line-Icons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/Simple-Line-Icons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/Simple-Line-Icons.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/portfolio/img-1.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/portfolio/img-2.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/portfolio/img-3.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/portfolio/img-4.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/portfolio/img-5.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/portfolio/img-6.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/portfolio/img-7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/portfolio/img-8.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/portfolio/img-9.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/profile.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/testimonials-bg.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/jquery.appear.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/jquery.filterizr.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/jquery.lineProgressbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/jquery.magnific-popup.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/slick.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/typed.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mailer.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
-    </list>
+    <list default="true" id="7d8d7e96-582e-40ce-8bc5-8f96fa086c26" name="Default" comment="Made some changes to the template" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -179,7 +116,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1506339733338</updated>
-      <workItem from="1506339734701" duration="3157000" />
+      <workItem from="1506339734701" duration="3216000" />
     </task>
     <task id="LOCAL-00001" summary="Made some changes to the template">
       <created>1506341747802</created>
@@ -188,11 +125,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506341747802</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Made some changes to the template">
+      <created>1506343241011</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1506343241011</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3157000" />
+    <option name="totallyTimeSpent" value="3216000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
