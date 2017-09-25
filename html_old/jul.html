@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/mayersReset.css">
+    <link rel="stylesheet" type="text/css" href="css/mainStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <title>God jul!</title>
+</head>
+
+<body>
+    
+    <!--Container starts-->
+    <div class="container">
+        
+        <!--Main page header starts-->
+        <header class ="col" id="mainPageHeader">
+            <h1>Julen 2016</h1>
+        </header>
+        
+            
+        <!--Main content starts-->
+        <section id="mainContent">
+            
+            <article class="col col12">
+                <img id="spaniaFlagg" src="pictures/christmas.png">
+            </article>
+            
+            <article class="col col12">
+                <h3>Tast inn ditt løsningsord</h3>
+                <input id="inputText" type="text">
+                <input id="knapp" type="button" value="Klikk">        
+            </article>
+            
+        </section>
+        <!--Main content edns-->
+        
+    </div>
+    <!--Container ends-->
+    
+ 
+    <script>
+        (function(){
+            var inputText;
+            var knapp;
+
+            var init = function(){
+                var setElements = function(){
+                    inputText = getElement("inputText");
+                    knapp = getElement("knapp")
+                }();
+
+                var setEvents = function(){
+                    knapp.onclick = function(){
+                        if(inputText.value == "ferie"){
+                            window.location = "ferie.html";
+                        }
+                        else if(inputText.value == "ugle"){
+                            window.location = "iskrem.html";
+                        }
+                        else if(inputText.value == "komedie"){
+                            window.location = "standup.html";
+                        }
+                        else{
+                            alert("FEIL SVAR!")
+                        }
+                    }
+                }();
+
+            }();
+
+            function getElement(id){
+                return document.getElementById(id);
+            }
+        }());
+
+    </script>    
+
+    
+</body>
+</html>
