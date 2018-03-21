@@ -1,0 +1,119 @@
+
+<template name="ai">
+  <div>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <input type="text" id="autocomplete-input" class="autocomplete">
+            <label for="autocomplete-input">Ask me anything</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <textarea id="response" cols="40" rows="20"></textarea>
+  </div>
+
+  <script type="text/javascript">
+
+  </script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  var accessToken = "17dabc778dd84043b96357adfa32ba5e";
+  var baseUrl = "https://api.api.ai/v1/";
+  $(document).ready(function() {
+
+    $('input.autocomplete').autocomplete({
+      data: {
+      "How are you?": null,
+      "Who are you?": null,
+      "Where do you study?": 'https://placehold.it/250x250'
+      },
+      limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
+      onAutocomplete: function(val) {
+      // Callback function when value is autcompleted.
+      },
+      minLength: 3, // The minimum length of the input for the autocomplete to start. Default: 1.
+    });
+
+    $(".autocomplete").keypress(function(event) {
+      if (event.which == 13) {
+        event.preventDefault();
+        send();
+      }
+    });
+    $("#rec").click(function(event) {
+      switchRecognition();
+    });
+  });
+  var recognition;
+  function startRecognition() {
+    recognition = new webkitSpeechRecognition();
+    recognition.onstart = function(event) {
+      updateRec();
+    };
+    recognition.onresult = function(event) {
+      var text = "";
+        for (var i = event.resultIndex; i < event.results.length; ++i) {
+          text += event.results[i][0].transcript;
+        }
+        setInput(text);
+      stopRecognition();
+    };
+    recognition.onend = function() {
+      stopRecognition();
+    };
+    recognition.lang = "en-US";
+    recognition.start();
+  }
+
+  function stopRecognition() {
+    if (recognition) {
+      recognition.stop();
+      recognition = null;
+    }
+    updateRec();
+  }
+  function switchRecognition() {
+    if (recognition) {
+      stopRecognition();
+    } else {
+      startRecognition();
+    }
+  }
+  function setInput(text) {
+    $(".autocomplete").val(text);
+    send();
+  }
+  function updateRec() {
+    $("#rec").text(recognition ? "Stop" : "Speak");
+  }
+  function send() {
+    var text = $(".autocomplete").val();
+    $.ajax({
+      type: "POST",
+      url: baseUrl + "query?v=20150910",
+      contentType: "application/json; charset=utf-8",
+      dataType: "json",
+      headers: {
+        "Authorization": "Bearer " + accessToken
+      },
+      data: JSON.stringify({ query: text, lang: "en", sessionId: "somerandomthing" }),
+      success: function(data) {
+        setResponse(JSON.stringify(data.result.fulfillment.speech, undefined, 2));
+      },
+      error: function() {
+        setResponse("Internal Server Error");
+      }
+    });
+    setResponse("Loading...");
+  }
+  function setResponse(val) {
+    $("#response").text(val);
+  }
+  </script>
+
+</template>
