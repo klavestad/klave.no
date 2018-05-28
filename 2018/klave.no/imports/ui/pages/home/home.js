@@ -6,3 +6,6 @@ import '../../components/ai/ai.js';
 import '../../components/hello/hello.js';
 import '../../components/info/info.js';
 import '../../components/footer/footer.js';
+import '../../components/banner/banner.js';
+import '../../components/portfolio/portfolio.js';
+import '../../components/about/about.js';

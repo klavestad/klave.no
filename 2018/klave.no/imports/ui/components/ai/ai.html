@@ -1,31 +1,31 @@
-
 <template name="ai">
-  <div>
-
+  <div class="container">
     <div class="row">
-      <div class="col s12">
+      <div class="col s11">
         <div class="row">
           <div class="input-field col s12">
             <input type="text" id="autocomplete-input" class="autocomplete">
-            <label for="autocomplete-input">Ask me anything</label>
+            <label for="autocomplete-input"></label>
           </div>
         </div>
       </div>
+      <div class="col s1">
+        <a class="btn-floating btn-large waves-effect waves-light green" id="rec"><i class="material-icons">mic</i></a>
+      </div>
     </div>
 
-    <textarea id="response" cols="40" rows="20"></textarea>
-  </div>
+    <ul>
+      {{#each outputs}}
+        {{> text}}
+      {{/each}}
+    </ul>
 
-  <script type="text/javascript">
+  <textarea id="response"></textarea>
 
-  </script>
-
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript">
   var accessToken = "17dabc778dd84043b96357adfa32ba5e";
   var baseUrl = "https://api.api.ai/v1/";
   $(document).ready(function() {
-
     $('input.autocomplete').autocomplete({
       data: {
       "How are you?": null,
@@ -69,7 +69,6 @@
     recognition.lang = "en-US";
     recognition.start();
   }
-
   function stopRecognition() {
     if (recognition) {
       recognition.stop();
@@ -115,5 +114,12 @@
     $("#response").text(val);
   }
   </script>
+</div>
+</template>
+
+<template name="output">
+  <li>
+    {{text}}
+  </li>
 
 </template>
