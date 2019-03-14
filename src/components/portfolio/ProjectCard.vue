@@ -25,8 +25,8 @@
       </div>
     </div>
     <footer class="card-footer">
-      <a v-bind:href="github" class="card-footer-item"><i class="fa fa-github"></i>View on github</a>
-      <a v-bind:href="link" class="card-footer-item"><i class="fa fa-eye"></i>Take a look!</a>
+      <a v-bind:href="github" class="card-footer-item"><i class="fa fa-github"></i>Github</a>
+      <a v-bind:href="link" class="card-footer-item"><i class="fa fa-eye"></i>Link</a>
     </footer>
   </div>
 </template>

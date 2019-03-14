@@ -1,5 +1,7 @@
 # klave.no
 
+![alt text](https://i.imgur.com/4wbr4pA.mp4 "Video of webpage")
+
 ## Project setup
 ```
 yarn install
