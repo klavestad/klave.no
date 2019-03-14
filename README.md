@@ -1,6 +1,6 @@
 # klave.no
 
-![alt text](https://i.imgur.com/4wbr4pA.mp4 "Video of webpage")
+![alt text]("https://i.imgur.com/GfSGLdF.png" "Picture of webpage")
 
 ## Project setup
 ```
