@@ -4,7 +4,7 @@
       <div class="container content-wrapper">
         <div class="columns">
           <div class="column is-half is-offset-one-quarter">
-            <h1 class="title is-2 has-text-centered">Want to get it touch?
+            <h1 class="title is-2 has-text-centered">Want to get in touch?
               <i class="em em-handshake"></i>
             </h1>
             <p class="content is-medium">

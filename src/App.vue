@@ -23,4 +23,8 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+
+.is-primary{
+  color: rgb(252, 34, 100)
+}
 </style>

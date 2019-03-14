@@ -4,30 +4,45 @@
       <div class="container content-wrapper">
         <div class="columns">
           <div class="column">
-            <ProjectCard projectname="klave.no" imgsrc="https://media.giphy.com/media/dK0AtTasUsPdZm7oEN/200w_d.gif" github="https://github.com/klavestad/klave.no" link="https://klave.no" v-bind:technologies="['Vue.js', 'BulmaCSS']" projectdescription="Homepage project to present a portfolio of recent projects and contact information" v-bind:tags="['Homepage', 'Portfolio']" />
+            <klaveno/>
           </div>
           <div class="column">
-            <ProjectCard projectname="klave.no" imgsrc="https://i.imgur.com/GfSGLdF.png" v-bind:technologies="['Vue.js', 'BulmaCSS']" projectdescription="Homepage project to present a portfolio of recent projects and contact information" v-bind:tags="['Homepage', 'Portfolio']" />
-          </div>
-          <div class="column">
-            <ProjectCard projectname="klave.no" imgsrc="https://i.imgur.com/GfSGLdF.png" v-bind:technologies="['Vue.js', 'BulmaCSS']" projectdescription="Homepage project to present a portfolio of recent projects and contact information" v-bind:tags="['Homepage', 'Portfolio']" />
-          </div>
-          <div class="column">
-            <ProjectCard projectname="klave.no" imgsrc="https://i.imgur.com/GfSGLdF.png" v-bind:technologies="['Vue.js', 'BulmaCSS']" projectdescription="Homepage project to present a portfolio of recent projects and contact information" v-bind:tags="['Homepage', 'Portfolio']" />
+            <byLarm/>
           </div>
         </div>
         <div class="columns">
           <div class="column">
-            <ProjectCard projectname="klave.no" imgsrc="https://i.imgur.com/GfSGLdF.png" v-bind:technologies="['Vue.js', 'BulmaCSS']" projectdescription="Homepage project to present a portfolio of recent projects and contact information" v-bind:tags="['Homepage', 'Portfolio']" />
+            <payex/>
           </div>
           <div class="column">
-            <ProjectCard projectname="klave.no" imgsrc="https://i.imgur.com/GfSGLdF.png" v-bind:technologies="['Vue.js', 'BulmaCSS']" projectdescription="Homepage project to present a portfolio of recent projects and contact information" v-bind:tags="['Homepage', 'Portfolio']" />
+            <meteorstarterkit/>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <roskilde/>
           </div>
           <div class="column">
-            <ProjectCard projectname="klave.no" imgsrc="https://i.imgur.com/GfSGLdF.png" v-bind:technologies="['Vue.js', 'BulmaCSS']" projectdescription="Homepage project to present a portfolio of recent projects and contact information" v-bind:tags="['Homepage', 'Portfolio']" />
+            <mobilecomputing/>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <visualanalytics/>
           </div>
           <div class="column">
-            <ProjectCard projectname="klave.no" imgsrc="https://i.imgur.com/GfSGLdF.png" v-bind:technologies="['Vue.js', 'BulmaCSS']" projectdescription="Homepage project to present a portfolio of recent projects and contact information" v-bind:tags="['Homepage', 'Portfolio']" />
+            <internetofthings/>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <bachelorproject/>
+          </div>
+          <div class="column">
+            <pj2200/>
+          </div>
+          <div class="column">
+            <lasada/>
           </div>
         </div>
       </div>
@@ -36,12 +51,32 @@
 </template>
 
 <script>
-import ProjectCard from "./ProjectCard.vue";
+import klaveno from "./projects/klaveno.vue";
+import byLarm from "./projects/bylarm.vue";
+import payex from "./projects/payex.vue";
+import roskilde from "./projects/roskilde.vue";
+import visualanalytics from "./projects/visualanalytics.vue";
+import internetofthings from "./projects/internetofthings.vue";
+import bachelorproject from "./projects/bachelorproject.vue";
+import pj2200 from "./projects/pj2200.vue";
+import lasada from "./projects/lasada.vue";
+import meteorstarterkit from "./projects/meteor-starter-kit.vue";
+import mobilecomputing from "./projects/mobilecomputing.vue";
 
 export default {
   name: "portfolioSection",
   components: {
-    ProjectCard
+    klaveno,
+    byLarm,
+    payex,
+    roskilde,
+    visualanalytics,
+    internetofthings,
+    bachelorproject,
+    pj2200,
+    lasada,
+    meteorstarterkit,
+    mobilecomputing
   },
   data() {
     return { projects: [] };

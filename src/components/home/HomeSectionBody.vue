@@ -21,9 +21,9 @@
         <div class="column is-2">
           <a
             class="button is-medium is-info"
-            data="../../assets/klavestad_sindre_cv.pdf"
+            data="/pdf/klavestad_sindre_cv.pdf"
             type="application/pdf"
-            href="../../assets/klavestad_sindre_cv.pdf"
+            href="/pdf/klavestad_sindre_cv.pdf"
           >Résumé</a>
         </div>
       </div>

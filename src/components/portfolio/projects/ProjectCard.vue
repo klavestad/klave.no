@@ -3,10 +3,14 @@
     <div class="card-header">
       <p class="card-header-title">
         <span>{{projectname}}</span>
-        <span v-for="technology in technologies" :key="technology" class="is-pulled-right">
-            <span class="tag is-warning is-pulled-right">{{technology}}</span>
-        </span>
       </p>
+      <span
+        v-for="technology in technologies"
+        :key="technology"
+        class="technologies"
+      >
+        <span class="tag is-warning is-pulled-right">{{technology}}</span>
+      </span>
     </div>
     <div class="card-content">
       <figure class="image">
@@ -25,8 +29,15 @@
       </div>
     </div>
     <footer class="card-footer">
-      <a v-bind:href="github" class="card-footer-item"><i class="fa fa-github"></i>Github</a>
-      <a v-bind:href="link" class="card-footer-item"><i class="fa fa-eye"></i>Link</a>
+      <a v-if="paper" v-bind:href="paper" class="card-footer-item">
+        <i class="fa fa-file"></i>Paper
+      </a>
+      <a v-if="github" v-bind:href="github" class="card-footer-item">
+        <i class="fa fa-github"></i>Github
+      </a>
+      <a v-if="external" v-bind:href="external" class="card-footer-item">
+        <i class="fa fa-external-link"></i>External
+      </a>
     </footer>
   </div>
 </template>
@@ -41,19 +52,23 @@ export default {
     projectdescription: String,
     tags: Array,
     github: String,
-    link: String
-
+    external: String,
+    paper: String
   }
 };
 </script>
 
 <style scoped>
+.technologies {
+  padding: 10px 10px 10px 0px;
+}
 
-.fa{
+.fa {
   margin-right: 10px;
 }
 
-.card-header, .card-footer{
-  background-color: rgb(250, 250, 250)
+.card-header,
+.card-footer {
+  background-color: rgb(250, 250, 250);
 }
 </style>
