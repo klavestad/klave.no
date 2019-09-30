@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card projectcard">
     <div class="card-header">
       <p class="card-header-title">
         <span>{{projectname}}</span>
@@ -59,6 +59,10 @@ export default {
 </script>
 
 <style scoped>
+.projectcard{
+  height: 100%
+}
+
 .technologies {
   padding: 10px 10px 10px 0px;
 }
